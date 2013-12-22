@@ -16,8 +16,9 @@
 
 PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/bin/mpdecision:system/bin/mpdecision \
-        vendor/samsung/jf-common/proprietary/bin/thermald:system/bin/thermald \
+        vendor/samsung/jf-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
         vendor/samsung/jf-common/proprietary/bin/thermal-engine:system/bin/thermal-engine \
+        vendor/samsung/jf-common/proprietary/lib/libthermalclient.so:system/lib/libthermalclient.so \
         vendor/samsung/jf-common/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:system/vendor/firmware/bcm2079xB4_firmware.ncd \
         vendor/samsung/jf-common/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:system/vendor/firmware/bcm2079xB4_pre_firmware.ncd \
         vendor/samsung/jf-common/proprietary/vendor/firmware/bcm4335.hcd:system/vendor/firmware/bcm4335.hcd \
@@ -30,8 +31,9 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
         vendor/samsung/jf-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
         vendor/samsung/jf-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-        vendor/samsung/jf-common/proprietary/lib/libdivxdrm.so:system/lib/libdivxdrm.so \
-        vendor/samsung/jf-common/proprietary/lib/libadreno_utils.so:system/lib/libadreno_utils.so \
+        vendor/samsung/jf-common/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
+        vendor/samsung/jf-common/proprietary/lib/libmm-abl.so:system/lib/libmm-abl.so \
+        vendor/samsung/jf-common/proprietary/lib/libmm-abl-oem.so:system/lib/libmm-abl-oem.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -40,7 +42,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-        vendor/samsung/jf-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/libOpenVG.so:system/vendor/lib/libOpenVG.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
@@ -48,28 +49,26 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/vendor/lib/libc2d30.so:system/vendor/lib/libc2d30.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/libllvm-a3xx.so:system/vendor/lib/libllvm-a3xx.so \
-        vendor/samsung/jf-common/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
         vendor/samsung/jf-common/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
-        vendor/samsung/jf-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
         vendor/samsung/jf-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
         vendor/samsung/jf-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
         vendor/samsung/jf-common/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
         vendor/samsung/jf-common/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
+        vendor/samsung/jf-common/proprietary/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
         vendor/samsung/jf-common/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
         vendor/samsung/jf-common/proprietary/bin/efsks:system/bin/efsks \
         vendor/samsung/jf-common/proprietary/bin/ks:system/bin/ks \
         vendor/samsung/jf-common/proprietary/bin/netmgrd:system/bin/netmgrd \
-        vendor/samsung/jf-common/proprietary/bin/sec-ril:system/bin/sec-ril \
         vendor/samsung/jf-common/proprietary/bin/qcks:system/bin/qcks \
         vendor/samsung/jf-common/proprietary/bin/qmiproxy:system/bin/qmiproxy \
         vendor/samsung/jf-common/proprietary/bin/qmuxd:system/bin/qmuxd \
+        vendor/samsung/jf-common/proprietary/bin/radish:system/bin/radish \
         vendor/samsung/jf-common/proprietary/bin/rild:system/bin/rild \
         vendor/samsung/jf-common/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+        vendor/samsung/jf-common/proprietary/bin/sec-ril:system/bin/sec-ril \
         vendor/samsung/jf-common/proprietary/lib/libatparser.so:system/lib/libatparser.so \
-        vendor/samsung/jf-common/proprietary/lib/libcordon.so:system/lib/libcordon.so \
-        vendor/samsung/jf-common/proprietary/lib/libdiag.so:system/lib/libdiag.so \
         vendor/samsung/jf-common/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
         vendor/samsung/jf-common/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
         vendor/samsung/jf-common/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
@@ -80,18 +79,18 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libqdp.so:system/lib/libqdp.so \
         vendor/samsung/jf-common/proprietary/lib/libqmi.so:system/lib/libqmi.so \
         vendor/samsung/jf-common/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
-        vendor/samsung/jf-common/proprietary/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
-        vendor/samsung/jf-common/proprietary/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
-        vendor/samsung/jf-common/proprietary/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
-        vendor/samsung/jf-common/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
         vendor/samsung/jf-common/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
         vendor/samsung/jf-common/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
         vendor/samsung/jf-common/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
         vendor/samsung/jf-common/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
         vendor/samsung/jf-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
         vendor/samsung/jf-common/proprietary/bin/time_daemon:system/bin/time_daemon \
         vendor/samsung/jf-common/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
-        vendor/samsung/jf-common/proprietary/lib/libgeofence.so:system/lib/libgeofence.so \
         vendor/samsung/jf-common/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
         vendor/samsung/jf-common/proprietary/lib/libsensirion_j1.so:system/lib/libsensirion_j1.so \
         vendor/samsung/jf-common/proprietary/lib/libsam.so:system/lib/libsam.so \
@@ -105,7 +104,7 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/cameradata/RS_M10MO_SS.bin:system/cameradata/RS_M10MO_SS.bin \
         vendor/samsung/jf-common/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
         vendor/samsung/jf-common/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
-        vendor/samsung/jf-common/proprietary/lib/hw/camera.msm8960.so:system/lib/hw/vendor-camera.msm8960.so \
+        vendor/samsung/jf-common/proprietary/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
         vendor/samsung/jf-common/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
         vendor/samsung/jf-common/proprietary/lib/libchromatix_imx074_default_video.so:system/lib/libchromatix_imx074_default_video.so \
         vendor/samsung/jf-common/proprietary/lib/libchromatix_imx074_preview.so:system/lib/libchromatix_imx074_preview.so \
@@ -165,36 +164,27 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/jf-common/proprietary/lib/libvdis.so:system/lib/libvdis.so \
         vendor/samsung/jf-common/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
         vendor/samsung/jf-common/proprietary/etc/wifi/bcmdhd_apsta.bin_a0:system/etc/wifi/bcmdhd_apsta.bin_a0 \
+        vendor/samsung/jf-common/proprietary/etc/wifi/bcmdhd_ibss.bin:system/etc/wifi/bcmdhd_ibss.bin \
         vendor/samsung/jf-common/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
         vendor/samsung/jf-common/proprietary/etc/wifi/bcmdhd_mfg.bin_a0:system/etc/wifi/bcmdhd_mfg.bin_a0 \
         vendor/samsung/jf-common/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
         vendor/samsung/jf-common/proprietary/etc/wifi/bcmdhd_sta.bin_a0:system/etc/wifi/bcmdhd_sta.bin_a0 \
         vendor/samsung/jf-common/proprietary/etc/wifi/cred.conf:system/etc/wifi/cred.conf \
         vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt_a0:system/etc/wifi/nvram_mfg.txt_a0 \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt_murata_a0:system/etc/wifi/nvram_mfg.txt_murata_a0 \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt_muratafem1:system/etc/wifi/nvram_mfg.txt_muratafem1 \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt_muratafem2:system/etc/wifi/nvram_mfg.txt_muratafem2 \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt_semco3rd:system/etc/wifi/nvram_mfg.txt_semco3rd \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt_semco3rd_a0:system/etc/wifi/nvram_mfg.txt_semco3rd_a0 \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_mfg.txt_semcosh:system/etc/wifi/nvram_mfg.txt_semcosh \
         vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt_a0:system/etc/wifi/nvram_net.txt_a0 \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt_murata_a0:system/etc/wifi/nvram_net.txt_murata_a0 \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt_muratafem1:system/etc/wifi/nvram_net.txt_muratafem1 \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt_muratafem2:system/etc/wifi/nvram_net.txt_muratafem2 \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt_semco3rd:system/etc/wifi/nvram_net.txt_semco3rd \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt_semco3rd_a0:system/etc/wifi/nvram_net.txt_semco3rd_a0 \
-        vendor/samsung/jf-common/proprietary/etc/wifi/nvram_net.txt_semcosh:system/etc/wifi/nvram_net.txt_semcosh \
-        vendor/samsung/jf-common/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-        vendor/samsung/jf-common/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
         vendor/samsung/jf-common/proprietary/bin/qseecomd:system/bin/qseecomd \
         vendor/samsung/jf-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
         vendor/samsung/jf-common/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
         vendor/samsung/jf-common/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
-        vendor/samsung/jf-common/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
         vendor/samsung/jf-common/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
-        vendor/samsung/jf-common/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
-        vendor/samsung/jf-common/proprietary/lib/libwvm.so:system/lib/libwvm.so
+        vendor/samsung/jf-common/proprietary/bin/insthk:system/bin/insthk \
+        vendor/samsung/jf-common/proprietary/etc/srm.bin:system/etc/srm.bin \
+        vendor/samsung/jf-common/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
+        vendor/samsung/jf-common/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
+        vendor/samsung/jf-common/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
+        vendor/samsung/jf-common/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+        vendor/samsung/jf-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+        vendor/samsung/jf-common/proprietary/bin/irsc_util:system/bin/irsc_util \
+        vendor/samsung/jf-common/proprietary/etc/sec_config:system/etc/sec_config
