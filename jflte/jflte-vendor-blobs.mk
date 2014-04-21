@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/jflte/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
 	vendor/samsung/jflte/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
 	vendor/samsung/jflte/proprietary/vendor/lib/libcsd-client.so:system/vendor/lib/libcsd-client.so \
+	vendor/samsung/jflte/proprietary/vendor/lib/libcsd-client.so:system/lib/libcsd-client.so \
 	vendor/samsung/jflte/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
 	vendor/samsung/jflte/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
 	vendor/samsung/jflte/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
