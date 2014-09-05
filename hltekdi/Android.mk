@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),hltespr)
+ifeq ($(TARGET_DEVICE),hltekdi)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := com.qualcomm.location
