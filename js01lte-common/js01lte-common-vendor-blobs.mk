@@ -237,12 +237,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/js01lte-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
     vendor/samsung/js01lte-common/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
     vendor/samsung/js01lte-common/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so \
-    vendor/samsung/js01lte-common/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
-    vendor/samsung/js01lte-common/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-    vendor/samsung/js01lte-common/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/js01lte-common/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     vendor/samsung/js01lte-common/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
-    vendor/samsung/js01lte-common/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     vendor/samsung/js01lte-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/samsung/js01lte-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/samsung/js01lte-common/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
