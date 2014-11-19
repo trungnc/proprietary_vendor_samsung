@@ -16,7 +16,11 @@
 
 LOCAL_PATH := $(call my-dir)
 
+<<<<<<< HEAD
 ifneq ($(filter klte kltespr klteusc kltevzw,$(TARGET_DEVICE)),)
+=======
+ifneq ($(filter klte kltedv kltespr klteusc kltevzw,$(TARGET_DEVICE)),)
+>>>>>>> FETCH_HEAD
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libHevcSwDecoder
